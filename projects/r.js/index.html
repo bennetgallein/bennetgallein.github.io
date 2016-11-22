@@ -5,48 +5,48 @@
 </head>
 <body>
 
-<h2>jsi.randomInt(min, max) </h2>
+<h2>rjs.randomInt(min, max) </h2>
 <button id='rint'>jsi.randomInt(0, 10)</button>
 <p>Click the button!</p>
 
-<h2>jsi.randomDec(min, max, decimals)</h2>
+<h2>rjs.randomDec(min, max, decimals)</h2>
 <button id='rdec'>jsi.randomDec(0, 10, 2)</button>
 <p>Click the button!</p>
 
-<h2>jsi.randomList(list)</h2>
+<h2>rjs.randomList(list)</h2>
 <button id='rlist'>jsi.randomList(["random1", "random2", "random3"])</button>
 <p>Click the button!</p>
 
-<h2>jsi.randomPercent(decimals)</h2>
+<h2>rjs.randomPercent(decimals)</h2>
 <button id='rperc'>jsi.randomPercent(5)</button>
 <p>Click the button!</p>
 
-<h2>jsi.randomString(lenght)</h2>
+<h2>rjs.randomString(lenght)</h2>
 <button id='rstring'>jsi.randomString(15)</button>
 <p>Click the button!</p>
 
-<h2>jsi.randomBoolean()</h2>
+<h2>rjs.randomBoolean()</h2>
 <button id="rboolean">jsi.randomBoolean()</button>
 <p>Click the button!</p>
 <script>
 
 document.getElementById('rint').onclick = function () {
-  this.nextElementSibling.innerHTML = jsi.randomInt(0, 10);
+  this.nextElementSibling.innerHTML = rjs.randomInt(0, 10);
 }
 document.getElementById('rdec').onclick = function () {
-  this.nextElementSibling.innerHTML = jsi.randomDec(0, 10, 2);
+  this.nextElementSibling.innerHTML = rjs.randomDec(0, 10, 2);
 }
 document.getElementById('rlist').onclick = function () {
-  this.nextElementSibling.innerHTML = jsi.randomList(['random1', 'random2', 'random3']);
+  this.nextElementSibling.innerHTML = rjs.randomList(['random1', 'random2', 'random3']);
 }
 document.getElementById('rperc').onclick = function () {
-  this.nextElementSibling.innerHTML = jsi.randomPercent(5);
+  this.nextElementSibling.innerHTML = rjs.randomPercent(5);
 }
 document.getElementById('rstring').onclick = function () {
-  this.nextElementSibling.innerHTML = jsi.randomString(15);
+  this.nextElementSibling.innerHTML = rjs.randomString(15);
 }
 document.getElementById('rboolean').onclick = function () {
-  this.nextElementSibling.innerHTML = jsi.randomBoolean();
+  this.nextElementSibling.innerHTML = rjs.randomBoolean();
 }
 </script>
 
