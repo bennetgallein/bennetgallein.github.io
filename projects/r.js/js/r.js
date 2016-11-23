@@ -23,5 +23,13 @@
 	};
 	this.randomBoolean = function() {
 		return rndm = Math.random() >= 0.5;
-	}
+	};
+	this.randomUpLetter = function() {
+		var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		return chars.charAt(Math.random() * chars.length);
+	};
+	this.randomLowLetter = function() {
+		var chars = "abcdefghijklmnopqrstuvwxyz";
+		return chars.charAt(Math.random() * chars.length);
+	};
 };

@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> r.js</title>
+	<title> r.js - randomize everything</title>
 	<script src="js/r.js"></script>
 </head>
 <body>
@@ -14,22 +14,30 @@
 <p>Click the button!</p>
 
 <h2>rjs.randomList(list)</h2>
-<button id='rlist'>jsi.randomList(["random1", "random2", "random3"])</button>
+<button id='rlist'>rsi.randomList(["random1", "random2", "random3"])</button>
 <p>Click the button!</p>
 
 <h2>rjs.randomPercent(decimals)</h2>
-<button id='rperc'>jsi.randomPercent(5)</button>
+<button id='rperc'>rsi.randomPercent(5)</button>
 <p>Click the button!</p>
 
 <h2>rjs.randomString(lenght)</h2>
-<button id='rstring'>jsi.randomString(15)</button>
+<button id='rstring'>rsi.randomString(15)</button>
 <p>Click the button!</p>
 
 <h2>rjs.randomBoolean()</h2>
-<button id="rboolean">jsi.randomBoolean()</button>
+<button id="rboolean">rsi.randomBoolean()</button>
 <p>Click the button!</p>
-<script>
 
+<h2>rjs.randomUpLetter()</h2>
+<button id="rupletter">rsi.randomUpLetter()</button>
+<p>Click the button!</p>
+
+<h2>rjs.randomLowLetter()</h2>
+<button id="rlowletter">rsi.randomLowLetter()</button>
+<p>Click the button!</p>
+
+<script>
 document.getElementById('rint').onclick = function () {
   this.nextElementSibling.innerHTML = rjs.randomInt(0, 10);
 }
@@ -48,7 +56,12 @@ document.getElementById('rstring').onclick = function () {
 document.getElementById('rboolean').onclick = function () {
   this.nextElementSibling.innerHTML = rjs.randomBoolean();
 }
+document.getElementById('rupletter').onclick = function () {
+	this.nextElementSibling.innerHTML = rjs.randomUpLetter();
+}
+document.getElementById('rlowletter').onclick = function () {
+	this.nextElementSibling.innerHTML = rjs.randomLowLetter();
+}
 </script>
-
 </body>
 </html>
