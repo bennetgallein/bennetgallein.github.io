@@ -1,67 +1,69 @@
 <html>
+
 <head>
-	<title> r.js - randomize everything</title>
-	<script src="js/r.js"></script>
-</head>
+    <title> r.js - randomize everything</title>
+    <script src="js/r.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> </head>
+
 <body>
-
-<h2>rjs.randomInt(min, max) </h2>
-<button id='rint'>jsi.randomInt(0, 10)</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomDec(min, max, decimals)</h2>
-<button id='rdec'>jsi.randomDec(0, 10, 2)</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomList(list)</h2>
-<button id='rlist'>rsi.randomList(["random1", "random2", "random3"])</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomPercent(decimals)</h2>
-<button id='rperc'>rsi.randomPercent(5)</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomString(lenght)</h2>
-<button id='rstring'>rsi.randomString(15)</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomBoolean()</h2>
-<button id="rboolean">rsi.randomBoolean()</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomUpLetter()</h2>
-<button id="rupletter">rsi.randomUpLetter()</button>
-<p>Click the button!</p>
-
-<h2>rjs.randomLowLetter()</h2>
-<button id="rlowletter">rsi.randomLowLetter()</button>
-<p>Click the button!</p>
-
-<script>
-document.getElementById('rint').onclick = function () {
-  this.nextElementSibling.innerHTML = rjs.randomInt(0, 10);
-}
-document.getElementById('rdec').onclick = function () {
-  this.nextElementSibling.innerHTML = rjs.randomDec(0, 10, 2);
-}
-document.getElementById('rlist').onclick = function () {
-  this.nextElementSibling.innerHTML = rjs.randomList(['random1', 'random2', 'random3']);
-}
-document.getElementById('rperc').onclick = function () {
-  this.nextElementSibling.innerHTML = rjs.randomPercent(5);
-}
-document.getElementById('rstring').onclick = function () {
-  this.nextElementSibling.innerHTML = rjs.randomString(15);
-}
-document.getElementById('rboolean').onclick = function () {
-  this.nextElementSibling.innerHTML = rjs.randomBoolean();
-}
-document.getElementById('rupletter').onclick = function () {
-	this.nextElementSibling.innerHTML = rjs.randomUpLetter();
-}
-document.getElementById('rlowletter').onclick = function () {
-	this.nextElementSibling.innerHTML = rjs.randomLowLetter();
-}
-</script>
+    <h2>rjs.randomInt(min, max) </h2>
+    <button class="waves-effect waves-light btn" id='rint'>jsi.randomInt(0, 10)</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomDec(min, max, decimals)</h2>
+    <button class="waves-effect waves-light btn" id='rdec'>jsi.randomDec(0, 10, 2)</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomList(list)</h2>
+    <button class="waves-effect waves-light btn" id='rlist'>rsi.randomList(["random1", "random2", "random3"])</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomPercent(decimals)</h2>
+    <button class="waves-effect waves-light btn" id='rperc'>rsi.randomPercent(5)</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomString(lenght)</h2>
+    <button class="waves-effect waves-light btn" id='rstring'>rsi.randomString(15)</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomBoolean()</h2>
+    <button class="waves-effect waves-light btn" id="rboolean">rsi.randomBoolean()</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomUpLetter()</h2>
+    <button class="waves-effect waves-light btn" id="rupletter">rsi.randomUpLetter()</button>
+    <p>Click the button!</p>
+    <h2>rjs.randomLowLetter()</h2>
+    <button class="waves-effect waves-light btn" id="rlowletter">rsi.randomLowLetter()</button>
+    <p>Click the button!</p>
+    <script>
+        document.getElementById('rint').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomInt(0, 10);
+        }
+        document.getElementById('rdec').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomDec(0, 10, 2);
+        }
+        document.getElementById('rlist').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomList(['random1', 'random2', 'random3']);
+        }
+        document.getElementById('rperc').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomPercent(5);
+        }
+        document.getElementById('rstring').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomString(15);
+        }
+        document.getElementById('rboolean').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomBoolean();
+        }
+        document.getElementById('rupletter').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomUpLetter();
+        }
+        document.getElementById('rlowletter').onclick = function () {
+            this.nextElementSibling.innerHTML = rjs.randomLowLetter();
+        }
+    </script>
 </body>
+
 </html>
