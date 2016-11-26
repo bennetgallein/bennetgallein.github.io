@@ -98,3 +98,30 @@ a:hover:before {
     font-size: 2.5em;
     padding-top: 20px;
 }
+
+.languages {
+    display: inline;
+    width: 100%;
+}
+
+.language {
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    background-color: #2FC4BF;
+}
+
+.language img {
+    padding: 20px;
+}
+
+.language h3 {
+    font-size: 2em;
+}
+
+.language p {
+    font-size: 1.3em;
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 150%;
+}
