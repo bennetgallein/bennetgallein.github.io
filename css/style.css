@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 .container {
     font-family: 'Pacifico', cursive;
     display: none;
@@ -100,17 +100,17 @@ a:hover:before {
 }
 
 .languages {
-    display: inline;
     width: 100%;
 }
 
 .language {
-    width: 33.2%;
+    width: 33.33%;
+    width: calc(100/ 3);
     height: 550px;
     text-align: center;
     float: left;
     background-color: #2FC4BF;
-    border: 1.5px solid #2DB3AE;
+    outline: 2px solid #2DB3AE;
 }
 
 .language img {
