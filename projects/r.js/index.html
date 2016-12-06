@@ -14,30 +14,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> </head>
 
 <body>
+  <div class="title" style="color: #2FC4BF; text-align:center; font-size: 1.5em;">
+    <h1> r.js - A JavaScript libary to generate a lot of random stuff!
+  </div>
+  <div class="column">
     <h2>rjs.randomInt(min, max) </h2>
+    <p>Generates a random Integer between the maximum and minimum number given.</p>
     <button class="waves-effect waves-light btn" id='rint'>jsi.randomInt(0, 10)</button>
     <p>Click the button!</p>
     <h2>rjs.randomDec(min, max, decimals)</h2>
+    <p>Generates a random Decimal Number between the maximum and minimum number given with the amount of decimals given.</p>
     <button class="waves-effect waves-light btn" id='rdec'>jsi.randomDec(0, 10, 2)</button>
     <p>Click the button!</p>
     <h2>rjs.randomList(list)</h2>
+    <p>Picks a random Entry of the List.</p>
     <button class="waves-effect waves-light btn" id='rlist'>rsi.randomList(["random1", "random2", "random3"])</button>
     <p>Click the button!</p>
+  </div>
+  <div class="column">
     <h2>rjs.randomPercent(decimals)</h2>
+    <p>Generates a random number between 0 and 100 with the amount of decimals given.
+</p>
     <button class="waves-effect waves-light btn" id='rperc'>rsi.randomPercent(5)</button>
     <p>Click the button!</p>
     <h2>rjs.randomString(lenght)</h2>
+    <p>Generates a random String out of all Letters and Number with the lenght given. Pretty good for ID's.
+</p>
     <button class="waves-effect waves-light btn" id='rstring'>rsi.randomString(15)</button>
     <p>Click the button!</p>
     <h2>rjs.randomBoolean()</h2>
+    <p>Generates wether true or false.
+</p>
     <button class="waves-effect waves-light btn" id="rboolean">rsi.randomBoolean()</button>
     <p>Click the button!</p>
+  </div>
+  <div class="column">
     <h2>rjs.randomUpLetter()</h2>
+    <p>Generates a random Uppercased letter.
+</p>
     <button class="waves-effect waves-light btn" id="rupletter">rsi.randomUpLetter()</button>
     <p>Click the button!</p>
     <h2>rjs.randomLowLetter()</h2>
+    <p>Generate a random Lowcased letter.
+</p>
     <button class="waves-effect waves-light btn" id="rlowletter">rsi.randomLowLetter()</button>
     <p>Click the button!</p>
+  </div>
+
     <script>
         document.getElementById('rint').onclick = function () {
             this.nextElementSibling.innerHTML = rjs.randomInt(0, 10);

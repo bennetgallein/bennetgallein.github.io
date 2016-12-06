@@ -22,7 +22,12 @@ body {
     font-family: 'Roboto';
     font-weight: 400;
 }
-
+.column {
+  width: 33.33%;
+  display: inline !important;
+  float: left;
+  padding-right: 80px;
+}
 
 /*HEADERS AND TEXT*/
 
@@ -32,6 +37,7 @@ h3 {
     margin: 10px 0px 10px 0px;
     font-family: 'Open Sans';
     font-weight: 300;
+    font-size: 2em !important;
 }
 
 h1 {
