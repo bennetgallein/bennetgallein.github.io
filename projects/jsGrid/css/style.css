@@ -1,0 +1,104 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:400,400i,500|Pacifico:400|Source+Code+Pro:400";
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+/*MAIN*/
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn {
+    text-transform: none !important;
+}
+
+body {
+    padding: 45px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.column {
+  width: 33.33%;
+  display: inline !important;
+  float: left;
+  padding-right: 80px;
+}
+
+/*HEADERS AND TEXT*/
+
+h1,
+h2,
+h3 {
+    margin: 10px 0px 10px 0px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 2em !important;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #2FC4BF;
+    border-bottom: 1px dashed #2FC4BF;
+}
+
+p {
+    color: dimgrey;
+}
+
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2FC4BF;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: ##2FC4BF;
+}
+
+::-webkit-scrollbar-thumb:active {
+    box-shadow: inset 0px 0px 5px ##2FC4BF;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey;
+    border: 0px none darkgrey;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 5px dimgrey;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: lightgrey;
+}
+
+::-webkit-scrollbar-track:active {
+    box-shadow: inset 0px 0px 8px dimgrey;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
