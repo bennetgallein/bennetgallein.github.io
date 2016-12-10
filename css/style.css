@@ -44,7 +44,20 @@
     padding-top: 15px;
     padding-left: 30px;
 }
-
+.cristmas {
+  top: 0;
+  border: 1px solid white;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #FA2828 !important;
+  text-align: center;
+  font-size: 1.5em !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: -5px;
+  margin-left: 50px;
+}
 a {
     position: relative;
     color: #fff;
