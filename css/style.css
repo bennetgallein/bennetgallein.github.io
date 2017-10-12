@@ -75,7 +75,7 @@ a:hover:before {
 }
 
 .jumbotron {
-    
+
     background-image: url(../wp-content/bg.jpg);
     width: 100%;
     height: 100%;
@@ -103,15 +103,18 @@ a:hover:before {
 }
 
 .language {
-    width: 33.33%;
-    width: calc(100/ 3);
+    width: calc(100%/ 3);
     height: 550px;
     text-align: center;
     float: left;
     background-color: #2FC4BF;
     outline: 2px solid #2DB3AE;
 }
-
+.lang-inner {
+    border: 1px solid green;
+    width: 50%;
+    margin: 0 auto;
+}
 .language img {
     padding: 20px;
 }
@@ -125,3 +128,4 @@ a:hover:before {
     padding-left: 20%;
     padding-right: 20%;
     line-height: 150%;
+}
