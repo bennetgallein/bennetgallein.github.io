@@ -1,13 +1,25 @@
 <html>
 
 <head>
-    <title> Project </title>
+    <title> Projects</title>
     <link href="style.css" rel="stylesheet"></link>
+    <script src="../js/jquery.js"></script>
 </head>
 
 <body>
     <h1>Projects by Myself</h1>
-    <p>You really thought i'm gonna list all of my projects here? Check me out at <a href="http://github.com/bennetgallein">GitHub</a>, there is everything nicely listed!</p>
+    <p>These are all my current GitHub projects! Check me out at <a href="http://github.com/bennetgallein">GitHub</a>!</p>
+    <ul class="projects"></ul>
+    <script>
+        $(document).ready(function() {
+            $.get("https://api.github.com/users/bennetgallein/repos", function(data, status) {
+                $.each(data, function(idx, obj) {
+                    $(".projects").append("<li><a href='" + obj.html_url + "'>" + obj.name + "</a> " + obj.description + "</li><br>");
+                    console.log(obj);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
