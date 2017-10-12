@@ -110,11 +110,7 @@ a:hover:before {
     background-color: #2FC4BF;
     outline: 2px solid #2DB3AE;
 }
-.lang-inner {
-    border: 1px solid green;
-    width: 50%;
-    margin: 0 auto;
-}
+
 .language img {
     padding: 20px;
 }
