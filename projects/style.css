@@ -7,10 +7,6 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #1E1D1D;
-    background-image: url("../wp-content/profile.png");
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 body {
@@ -24,7 +20,9 @@ body {
     font-weight: 400;
 }
 
-
+.projects {
+    color: black;
+}
 /*HEADERS AND TEXT*/
 
 h1,
